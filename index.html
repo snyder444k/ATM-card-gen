@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="dir">
+            <div class="left"></div>
+            <div class="right">
+                <form>
+                    <div class="holder gap">
+                        <label for="Hname">CARDHOLDER NAME</label> <br>
+                        <input type="text" id="Hname" class="gap input" placeholder="e.g Jane Appleseed">
+                       <p class="holderError numberError" id="holderError"></p>
+                    </div>
+                    <div class="number gap">
+                         <label for="Cnumber">CARD NUMBER</label> <br>
+                        <input type="number" id="Cnumber" placeholder="e.g. 12334 5678 9123 000" class="gap input num">
+                         <p class="numberError" id="numberError"></p>
+                    </div>
+                    <div class="exp">
+                        <div class="fag">
+                        <label for="lam" class="mem">EXP.DATE (MM/YY)</label>
+                        <div class="zag">
+                            <input type="number" placeholder="MM" class="lam" id="lam">
+                          <input type="number" placeholder="YY" class="lam" id="dem">
+                            
+                           </div>
+                           <p class="cvcError" id="expError"></p>
+                        </div>
+
+                        <div class="sec">
+                        <label for="classico">CVC</label> <br>   
+                        <input type="number" class="classico" placeholder="e.g 123" id="classico">
+                        <p class="cvcError" id="cvcError"></p>
+                    </div>
+                    </div>
+                    <button type="button" id="submit">Confirm</button>
+                </form>
+
+                <div class="thank-div" id="thank-div">
+                    <div class="thank-em">
+                    <img src="./icon-complete.svg" alt="">
+                    <p class="you">THANK YOU!</p>
+                    <p class="added">We've added your card details</p>
+                    <button class="continue" id="continue">
+                        Continue
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="front-card">
+            <img src="./card-logo.svg" alt="" class="cam-card">
+            <p class="card-no" id="card-no">0000 0000 0000 0000</p>
+
+            <div class="validity">
+                <p class="val" id="namer">JANE APPLESEED</p>
+                <p class="val" id="dater">00/00</p>
+            </div>
+        </div>
+        <div class="back-card">
+            <div class="valee">
+                <p></p>
+                <p id="cvcVal">000</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
